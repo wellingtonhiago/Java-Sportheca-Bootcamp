@@ -1,4 +1,4 @@
 package com.sportheca.banco;
 
-public class conta {
+public class ContaCorrente {
 }
