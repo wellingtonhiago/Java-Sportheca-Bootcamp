@@ -1,2 +1,1 @@
-# Sportheca Bootcamp
-Projetos Bootcamp da Sportheca
+# Projetos da Bootcamp da Sportheca na DIO
