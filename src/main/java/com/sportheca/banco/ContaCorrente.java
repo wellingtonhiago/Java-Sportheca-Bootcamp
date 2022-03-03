@@ -28,13 +28,14 @@ public class ContaCorrente extends Conta{
     }
 
     @Override
-    public void depositar() {
+    public void depositar(int deposito) {
+        setSaldo(getSaldo() + deposito);
 
     }
 
     @Override
-    public void sacar() {
-
+    public void sacar(int saque) {
+        setSaldo(getSaldo() - saque);
     }
 
     @Override

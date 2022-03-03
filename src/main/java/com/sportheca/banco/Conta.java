@@ -32,7 +32,7 @@ public abstract class Conta {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
@@ -56,9 +56,9 @@ public abstract class Conta {
         return agencia;
     }
 
-    public abstract void depositar();
+    public abstract void depositar(int deposito);
 
-    public abstract void sacar();
+    public abstract void sacar(int saque);
 
     public abstract void transferir();
 
