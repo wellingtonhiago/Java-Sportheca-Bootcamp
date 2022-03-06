@@ -1,6 +1,7 @@
 package com.sportheca.desafioum;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class QuantaMandioca  {
@@ -10,26 +11,28 @@ public class QuantaMandioca  {
     public static void main(String[] args) throws IOException {
 
         Scanner leitor = new Scanner(System.in);
-        // System.out.println("Quantas porções Chico irá comer? ");
-        porcoes[0] *= leitor.nextInt();
 
-        // System.out.println("Quantas porções Bento irá comer? ");
-        porcoes[1] *= leitor.nextInt();
+      // porcoes[0] Chico
+      // porcoes[1] Bento
+      // porcoes[2] Bernardo
+      // porcoes[3] Marina
+      // porcoes[4] Lara
 
-        // System.out.println("Quantas porções Bernardo irá comer? ");
-        porcoes[2] *= leitor.nextInt();
-
-        // System.out.println("Quantas porções Marina irá comer? ");
-        porcoes[3] *= leitor.nextInt();
-
-        // System.out.println("Quantas porções Lara irá comer? ");
-        porcoes[4] *= leitor.nextInt();
-
-        // Lembrando que Marlene sempre come 225 gramas
         int total = 225;
-        for(int i = 0; i < porcoes.length; i++){
-            total += porcoes[i];
+        boolean valorValido = false;
+        int i = 0;
+
+        for (i = 0; i< porcoes.length; i++) {
+            try {
+                porcoes[i] *= leitor.nextInt();
+                total += porcoes[i];
+            }  catch (InputMismatchException e) {
+                System.out.println("Entre com um inteiro: ");
+                porcoes[i] *= leitor.nextInt();
+            }
         }
+
+
         // System.out.println("O total de mandiocas a ser preparada em gramas é: ");
         System.out.println(total);
 
