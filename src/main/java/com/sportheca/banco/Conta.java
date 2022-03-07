@@ -60,7 +60,7 @@ public abstract class Conta {
 
     public abstract void sacar(int saque);
 
-    public abstract void transferir();
+    public abstract void transferir(int transferencia);
 
     public abstract void pagar();
 

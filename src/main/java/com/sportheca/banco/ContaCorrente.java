@@ -39,7 +39,7 @@ public class ContaCorrente extends Conta{
     }
 
     @Override
-    public void transferir() {
+    public void transferir(int transferencia) {
 
     }
 
