@@ -13,7 +13,7 @@ public class TryCatchLoop {
         do {
             try {
                 wenttocatch = false;
-                number_of_rigons = sc.nextInt(); // sc is an object of scanner class
+                number_of_rigons = sc.nextInt();
             } catch (InputMismatchException e) {
                 sc.next();
                 wenttocatch = true;

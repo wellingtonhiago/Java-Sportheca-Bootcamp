@@ -18,19 +18,22 @@ public class QuantaMandioca  {
       // porcoes[3] Marina
       // porcoes[4] Lara
 
-        int total = 225;
+        double total = 225;
         boolean valorValido = false;
         int i = 0;
 
-        for (i = 0; i< porcoes.length; i++) {
-            try {
-                porcoes[i] *= leitor.nextInt();
+        do{
+            if(leitor.hasNextDouble()){
+            //  System.out.println("Entre com a quantidade de porções: ");
+                porcoes[i] *= (double) leitor.nextDouble();
                 total += porcoes[i];
-            }  catch (InputMismatchException e) {
-                System.out.println("Entre com um inteiro: ");
-                porcoes[i] *= leitor.nextInt();
+                i++;
+                if(i == porcoes.length) valorValido = true;
+            }else{
+                leitor.nextLine();
+            //  System.out.println("Valor inválido, dentre com um valor inteiro: ");
             }
-        }
+        }while(!valorValido);
 
 
         // System.out.println("O total de mandiocas a ser preparada em gramas é: ");
