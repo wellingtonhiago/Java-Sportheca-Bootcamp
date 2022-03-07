@@ -24,14 +24,14 @@ public class QuantaMandioca  {
 
         do{
             if(leitor.hasNextDouble()){
-            //  System.out.println("Entre com a quantidade de porções: ");
+            System.out.println("Entre com a quantidade de porções: ");
                 porcoes[i] *= (double) leitor.nextDouble();
                 total += porcoes[i];
                 i++;
                 if(i == porcoes.length) valorValido = true;
             }else{
                 leitor.nextLine();
-            //  System.out.println("Valor inválido, dentre com um valor inteiro: ");
+            System.out.println("Valor inválido, entre com um valor inteiro: ");
             }
         }while(!valorValido);
 
