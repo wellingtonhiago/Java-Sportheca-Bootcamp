@@ -1,7 +1,6 @@
-package com.sportheca.desafioum;
+package com.sportheca.desafiotestes1;
 
 import java.io.IOException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class QuantaMandioca  {

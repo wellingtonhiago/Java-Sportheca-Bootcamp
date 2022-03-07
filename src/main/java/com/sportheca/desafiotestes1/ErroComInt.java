@@ -1,6 +1,5 @@
-package com.sportheca.desafioum;
+package com.sportheca.desafiotestes1;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ErroComInt {
